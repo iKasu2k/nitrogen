@@ -1,3 +1,4 @@
+const fs = require('fs');
 /**
  * Helper Function to generate random strings based on supplied length.
  * 
@@ -14,16 +15,31 @@ const randomString = function (length) {
 		return result;
 }
 
+/**
+ * binds on all significant exit signals and calls the cb
+ * 
+ * @param {function} cb 
+ */
 const initErrorHandler = function(cb) {
 	[`exit`, `SIGINT`, `SIGUSR1`, `SIGUSR2`, `uncaughtException`, `SIGTERM`].forEach((eventType) => {
 		process.on(eventType, cb.bind(null, eventType));
 	});
 }
 
+const ensureExists = (path, cb) => {
+	var tmp = fs.mkdirSync(path, { recursive: true});
+	if(typeof tmp !== undefined) {
+		cb(null);
+	} else {
+		cb('Error creating Directory!');
+	}
+};
+
 /**
  * Module Exports
  */
 module.exports = {
     randomString,
-	initErrorHandler
+	initErrorHandler,
+	ensureExists
 }

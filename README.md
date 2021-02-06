@@ -22,6 +22,7 @@ To circumvent this issue, NitroGen will spawn a previously defined amount of TOR
 - [Usage :package:](#usage-package)
     - [TOR Nodes](#tor-nodes)
     - [Start Scraper in CLI](#start-scraper-in-cli)
+    - [:exclamation: If any errors occur or a kill signal is received, the scraper will stop sending requests, kill TOR Nodes an will wait for user Input.](#exclamation-if-any-errors-occur-or-a-kill-signal-is-received-the-scraper-will-stop-sending-requests-kill-tor-nodes-an-will-wait-for-user-input)
 - [License :zap:](#license-zap)
 
 ## Install Instructions :wrench:
@@ -51,16 +52,6 @@ $ emerge tor
 # Arch Linux
 $ pacman -S tor
 ```
-<br />
-
-When TOR is installed, create a new file at `/etc/tor/torrc.2` and copy the following content:
-```bash
-MaxCircuitDirtiness 10
-NewCircuitPeriod 10
-
-SocksPort 9060
-DataDirectory /var/lib/tor2
-```
 
 ### Setup
 Fork `master` branch into your personal repository or clone it directly from the main repository. Install node modules.
@@ -74,6 +65,7 @@ $ npm install
 ## Usage :package:
 #### TOR Nodes
 The amount of TOR Nodes spawned is controlled via the ENV variable TOR_COUNT. Default start script will set TOR_COUNT to 8. If TOR_COUNT is not set, the scraper will not start!
+TOR Data Directory will be written to `/src/res/.tor/{i}`.
 
 #### Start Scraper in CLI
 To start the TOR Nodes and the Scraper, simply run the following command:
@@ -81,12 +73,10 @@ To start the TOR Nodes and the Scraper, simply run the following command:
 $ npm run start
 ```
 
-> :exclamation: If any errors occur, the scraper will stop sending requests, kill TOR Nodes an will wait for user Input. This is currently a bug and will be fixed in a future version.
-To avoid any issues after a crash, you can run the following command to kill all TOR Nodes and delete the temporary files and folders created by the scraper.
-> ```sh
-> $ npm run kill
-> ```
-Working codes can be found inside the `/src/logs/codes.log` file. Full log is available in `/src/logs/full.log`
+#### :exclamation: If any errors occur or a kill signal is received, the scraper will stop sending requests, kill TOR Nodes an will wait for user Input. 
+
+
+Found codes can be found inside the `codes.log` file.
 
 
 ## License :zap:

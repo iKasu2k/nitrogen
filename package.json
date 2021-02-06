@@ -5,7 +5,6 @@
   "main": "main.js",
   "scripts": {
     "start": "TOR_COUNT=8 cross-env nodemon src/main.js",
-    "kill": "sh killTorNodes.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +13,8 @@
     "axios": "^0.21.1",
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.7",
+    "replace-in-file": "^6.2.0",
+    "rimraf": "^3.0.2",
     "socks-proxy-agent": "^4.0.2",
     "winston": "^3.3.3"
   }

@@ -19,7 +19,7 @@ const logFormat = format.printf((info) => {
  * @type {Logger}
  */
 const logger = createLogger({
-  level: 'debug',
+  level: 'info',
   format: format.combine(
     format.errors({ stack: true }),
     format.label({ label: path.basename(process.mainModule.filename) }),
@@ -39,15 +39,15 @@ const logger = createLogger({
       filename: path.join(__basedir, 'logs/full.log'), 
       level: 'info',
       format: logFormat,
-      options: { flags: 'w' } 
+      options: { flags: 'a' } 
     }),
     
     // Logging only warns and errors to file
     new transports.File({ 
       filename: path.join(__basedir, 'logs/error.log'),
-      level: 'warn',
+      level: 'error',
       format: logFormat,
-      options: { flags: 'w' }
+      options: { flags: 'a' }
     })
   ]
 });

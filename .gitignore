@@ -1,3 +1,6 @@
+# Project Files
+src/res/.tor
+
 # Logs
 *.log
 npm-debug.log*
