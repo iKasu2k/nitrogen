@@ -1,11 +1,9 @@
 <center>
 <p align="center">
-<h1>🤖 NitroGen 🤖</h1>
-<a href="https://github.com/iKasu2k/nitrogen"><img alt="GitHub license" src="https://img.shields.io/github/license/iKasu2k/nitrogen"></a> <a href="https://github.com/iKasu2k/nitrogen/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/iKasu2k/nitrogen"></a> <a href="https://github.com/iKasu2k/nitrogen/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/iKasu2k/nitrogen"></a></p>
-</center>
-
-<center>
-    <h4>A small tool to generate and check Discord Nitro Gift Codes automatically using TOR as proxy. </h4></h1>
+<h1> NitroGen </h1>
+<a href="https://github.com/iKasu2k/nitrogen"><img alt="GitHub license" src="https://img.shields.io/github/license/iKasu2k/nitrogen"></a> <a href="https://github.com/iKasu2k/nitrogen/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/iKasu2k/nitrogen"></a> <a href="https://github.com/iKasu2k/nitrogen/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/iKasu2k/nitrogen"></a>
+<h4>A small tool to generate and check Discord Nitro Gift Codes automatically using TOR as proxy. </h4>
+</p>
 </center>
 
 ## Why NitroGen :question:
