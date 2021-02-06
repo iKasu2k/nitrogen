@@ -1,26 +1,21 @@
-
-
 <center>
-    <h1>🤖 NitroGen 🤖</h1>
-</center>
-
-<center>
-
- [![GitHub license](https://img.shields.io/github/license/iKasu2k/nitrogen?style=flat)](https://github.com/iKasu2k/nitrogen) [![GitHub stars](https://img.shields.io/github/stars/iKasu2k/nitrogen?style=flat)](https://github.com/iKasu2k/nitrogen/stargazers) [![GitHub issues](https://img.shields.io/github/issues/iKasu2k/nitrogen?style=flat)](https://github.com/iKasu2k/nitrogen/issues)
-
+<p align="center">
+<h1>🤖 NitroGen 🤖</h1>
+<a href="https://github.com/iKasu2k/nitrogen"><img alt="GitHub license" src="https://img.shields.io/github/license/iKasu2k/nitrogen"></a> <a href="https://github.com/iKasu2k/nitrogen/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/iKasu2k/nitrogen"></a> <a href="https://github.com/iKasu2k/nitrogen/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/iKasu2k/nitrogen"></a></p>
 </center>
 
 <center>
     <h4>A small tool to generate and check Discord Nitro Gift Codes automatically using TOR as proxy. </h4></h1>
 </center>
-<br />
 
 ## Why NitroGen :question:
-#### Traditional scrapers require a list of proxies or utilize free proxy websites to send anonymous requests. In most cases, those free proxies are most likely non-working or getting blocked relatively fast. Finding good and reliable proxies on the other hand can be time consuming or cost intensive.
+Traditional scrapers require a list of proxies or utilize free proxy websites to send anonymous requests. In most cases, those free proxies are most likely non-working or getting blocked relatively fast. Finding good and reliable proxies on the other hand can be time consuming or cost intensive.
 
-#### To circumvent this issue, NitroGen will spawn a previously defined amount of TOR Nodes, each providing a socks5 proxy to be used to send requests to Discord. Each Node is configured to change its IP Address every 10 seconds, allowing to send subsequent requests without being rate limited. With 8 Nodes, ~2-3 requests were sent each second.
+To circumvent this issue, NitroGen will spawn a previously defined amount of TOR Nodes, each providing a socks5 proxy to be used to send requests to Discord. Each Node is configured to change its IP Address every 10 seconds, allowing to send subsequent requests without being rate limited. With 8 Nodes, ~2-3 requests were sent each second.
 
 ## Table of Contents :book:
+- [Why NitroGen :question:](#why-nitrogen-question)
+- [Table of Contents :book:](#table-of-contents-book)
 - [Install Instructions :wrench:](#install-instructions-wrench)
   - [Pre Requirements :exclamation:](#pre-requirements-exclamation)
   - [Setup](#setup)
