@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "TOR_COUNT=8 cross-env nodemon src/main.js",
+    "start": "TOR_COUNT=12 cross-env nodemon src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -171,7 +171,7 @@ async function scrapeCodes() {
             let code = randomString(24);
             let url = 'https://discordapp.com/api/v6/entitlements/gift-codes/' + code;
 
-            await axios({
+            axios({
                 url: url,
                 httpsAgent: agents[i],
             })
@@ -186,7 +186,6 @@ async function scrapeCodes() {
             }).catch(function (error) {
                 if(error.response.status == 404) {
                     logger.info('Invalid Code: ' + code);
-                    sleep(500);
                 } else if(error.response.status == 429) {
                     sleep(250);
                 }
