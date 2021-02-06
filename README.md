@@ -21,13 +21,13 @@
 #### To circumvent this issue, NitroGen will spawn a previously defined amount of TOR Nodes, each providing a socks5 proxy to be used to send requests to Discord. Each Node is configured to change its IP Address every 10 seconds, allowing to send subsequent requests without being rate limited. With 8 Nodes, ~2-3 requests were sent each second.
 
 ## Table of Contents :book:
-- [Install Instructions :wrench:](#install-instructions-🔧)
-  - [Pre Requirements :exclamation:](#pre-requirements-❗️)
+- [Install Instructions :wrench:](#install-instructions-wrench)
+  - [Pre Requirements :exclamation:](#pre-requirements-exclamation)
   - [Setup](#setup)
-- [Usage :package:](#usage-📦)
+- [Usage :package:](#usage-package)
     - [TOR Nodes](#tor-nodes)
     - [Start Scraper in CLI](#start-scraper-in-cli)
-- [License :zap:](#license-⚡️)
+- [License :zap:](#license-zap)
 
 ## Install Instructions :wrench:
 Before running the Scraper, please make sure you meet the pre requirements to avoid any conflicts while running the scraper. 
