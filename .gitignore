@@ -1,6 +1,8 @@
 # Logs
 *.log
 npm-debug.log*
+src/logs/full.log
+src/logs/error.log
 
 # Runtime data
 pids
